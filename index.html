@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="icon" href="images/logo/mac-book.ico" type="image/x-icon" sizes="512x512">
+    <!-- Font Awesome -->
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/5485bfc962.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mac-book.css">
+    <title>Mac-Book</title>
+</head>
+
+<body>
+    <main>
+        <section class="container mt-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                <div class="container">
+                    <img src="images/mac.png" class="img-fluid" alt="">
+                </div>
+                <div class="container">
+                    <a href="" class="text-decoration-none">
+                        <h2 class="fw-bold fs-1 text-dark">Customize your Blue 24-inch iMac with Apple A1 chip.</h2>
+                    </a>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores, 7-core GPU, and 16 core-Neutral Engine
+                        8GB
+                        unified
+                        memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse, Magic Keyboard-US English
+                    </p>
+                    <h6 class="fw-bold mt-5">Memory</h6>
+                    <div>
+                        <button id="8gb" class="mac-btn rounded my-2">8GB unified memory</button>
+                        <button id="16gb" class="mac-btn rounded my-2">16GB unified memory</button>
+                    </div>
+                    <h6 class="fw-bold mt-5">Storage</h6>
+                    <div>
+                        <button id="256gb" class="mac-btn rounded my-2">256GB SSD storage</button>
+                        <button id="512gb" class="mac-btn rounded my-2">512GB SSD storage</button>
+                        <button id="1tb" class="mac-btn rounded my-2">1TB SSD storage</button>
+                    </div>
+                    <h6 class="fw-bold mt-5">Choose your delivery option</h6>
+                    <div>
+                        <button id="prime-delivery" class="mac-btn rounded my-2">Friday, Aug 25 FREE Prime
+                            Delivery</button>
+                        <button id="delivery-charge-button" class="mac-btn rounded my-2">Friday, Aug 21 Delivery charge
+                            $20</button>
+                    </div>
+                    <div class="mt-5">
+                        <table class="table w-50 fw-bold">
+                            <thead>
+                                <tr>
+                                    <td>Best Price</td>
+                                    <td>$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Memory Cost</td>
+                                    <td>$<span id="memory-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Storage Cost</td>
+                                    <td>$<span id="storage-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery charge</td>
+                                    <td>$<span id="delivery-charge">0</span></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total Price</td>
+                                    <td>$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h6 class=" fw-bold mt-4">Add Promo code</h6>
+                    <div class="d-flex align-items-center mt-2">
+                        <input id="promo-input" type="text" class="form-control w-50">
+                        <button id="promo-submit" class="btn btn-danger" disabled>Apply</button>
+                    </div>
+                    <h6 class="fw-bold my-2">Try left: <span id="try-left">1</span></h6>
+                    <div id="snackbar">Coupon Limit Reached!</div>
+                </div>
+            </div>
+            <table class="table fw-bold mt-2">
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 class="fw-bold">Total: $<span id="grand-total-price">1299</span></h1>
+            </td>
+        </section>
+    </main>
+    <footer class="text-uppercase my-5">
+        <p class="text-center fw-bold">Copyright &copy; 2021 | All Rights Reserved By</p>
+        <p class="text-center"><span id="best-price" class="text-primary fw-bold">Nafi Mahmud</span></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/mac-book.js"></script>
+</body>
+
+</html>
